@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body
+    style="
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    "
+  >
+    <br />
+    <form
+      style="
+        background-color: white;
+        padding: 30px;
+        border-radius: 30px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      "
+      action="/register"
+      method="POST"
+    >
+      <fieldset>
+        <legend>Register:</legend>
+        <br />
+        <u><label for="fname">First name:</label><br /></u>
+        <input required type="text" id="fname" name="fname" /><br /><br />
+
+        <u><label for="lname">Last name:</label><br /></u>
+        <input required type="text" id="lname" name="lname" /><br /><br />
+
+        <u><label for="email">Email:</label><br /></u>
+        <input required type="email" id="email" name="email" /><br /><br />
+
+        <u><label for="birth">Birth:</label><br /></u>
+        <input required type="date" id="birth" name="birth" /><br /><br />
+
+        <u><legend>Gender:</legend></u>
+
+        <input required type="radio" id="Men" name="Gender" value="Men" />
+        <label for="Men">Men</label><br />
+
+        <input required type="radio" id="Women" name="Gender" value="Women" />
+        <label for="Women">Women</label><br />
+
+        <input required type="radio" id="Other" name="Gender" value="Other" />
+        <label for="Other">Other</label><br /><br />
+
+        <u><label for="Courses">Choose a Course:</label><br /></u>
+        <select required name="Courses" id="Courses">
+          <option value="Python">Python</option>
+          <option value="SQL">SQL</option>
+          <option value="JavaScrypt">JavaScrypt</option></select
+        ><br /><br />
+
+        <u><label for="regulations">approve regulations</label><br /></u>
+        <input required type="checkbox" id="regulations" name="regulations" />
+        <br /><br /><br />
+
+        <center>
+          <button type="submit" value="Submit">Submit</button>
+        </center>
+      </fieldset>
+    </form>
+  </body>
+</html>
