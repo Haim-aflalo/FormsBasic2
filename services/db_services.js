@@ -5,7 +5,6 @@ import { userSchema } from '../models/schema.js';
 const User = mongoose.model('courses', userSchema);
 
 export async function createStudent(data) {
-  console.log(data);
   const db = await connectMongo();
   return await User.create(data);
 }
