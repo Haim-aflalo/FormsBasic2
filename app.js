@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.get('/', function (req, res) {
   res.sendFile(
-    'C:/Users/INTERNET/Desktop/Html/FomsBasic2/client/register.html',
+    'C:/Users/INTERNET/Desktop/Html/FormsBasic2/client/register.html',
   );
 });
 app.use('/', Router);
@@ -15,4 +15,3 @@ app.use('/', Router);
 app.listen(3000, () => {
   console.log('server run');
 });
-
