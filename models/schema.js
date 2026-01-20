@@ -26,7 +26,7 @@ export const userSchema = new mongoose.Schema({
   Courses: {
     type: String,
     required: true,
-    enum: ['Python', 'SQL', 'JavaScrypt'],
+    enum: ['Python', 'SQL', 'JavaScript'],
   },
   regulations: {
     type: String,
